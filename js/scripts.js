@@ -3,6 +3,9 @@ $(document).ready(function() {
   $("form").submit(function(){
     event.preventDefault();
     var input = parseInt($("input").val());
+      if (!input) {
+        location.reload();
+      }
     beepboop(input);
     $("form").hide();
     $("h1").hide();
@@ -17,8 +20,8 @@ $(document).ready(function() {
 var finalOutput = [];
 
 function beepboop(num) {
-  for (i=0; i<num; i++) {
-    finalOutput.push(i);
+  for (i=0; i<=num; i++) {
+    finalOutput.push(" " + i);
   }
 
 
