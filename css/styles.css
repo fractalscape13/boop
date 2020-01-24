@@ -6,7 +6,7 @@ body, html {
 }
 
 .bg {
-  background-image: url("../img/hex.jpg");
+  background-image: url("../img/comb.jpg");
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -15,7 +15,7 @@ body, html {
 }
 
 .container {
-  background-color: rgb(224, 204, 178, .4);
+  background-color: rgba(236, 227, 214, 0.7);
   height: 100vh;
 }
 
@@ -51,6 +51,6 @@ button:hover {
 }
 
 #output a {
-  color: rgb(245, 241, 42);
+  color: rgb(141, 34, 2);
   font-weight: bold;
 }
