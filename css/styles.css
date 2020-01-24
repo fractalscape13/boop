@@ -22,7 +22,8 @@ body, html {
 }
 
 h1 {
-  padding: 100px;
+  padding-top: 100px;
+  padding-bottom: 50px;
   color: rgb(16, 2, 26);
   font-weight: bolder;
 }
