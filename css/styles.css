@@ -29,6 +29,7 @@ input {
   width: 15%;
   background-color: black;
   color: silver;
+  text-align: center;
 }
 
 button {
@@ -41,4 +42,13 @@ button {
 
 button:hover {
   cursor: pointer;
+}
+
+#output {
+  display: none;
+}
+
+#output a {
+  color: rgb(245, 241, 42);
+  font-weight: bold;
 }
