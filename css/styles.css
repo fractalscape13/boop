@@ -16,7 +16,9 @@ body, html {
 
 .container {
   background-color: rgba(236, 227, 214, 0.7);
-  height: 100vh;
+  height: stretch;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 h1 {
@@ -39,6 +41,7 @@ button {
   border: 4px solid black;
   border-radius: 15%;
   width: 30%;
+  margin-bottom: 500px;
 }
 
 button:hover {
@@ -53,4 +56,8 @@ button:hover {
 #output a {
   color: rgb(141, 34, 2);
   font-weight: bold;
+}
+
+#result {
+  padding-bottom: 100px;
 }

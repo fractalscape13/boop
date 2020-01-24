@@ -6,10 +6,11 @@ $(document).ready(function() {
       if (!input) {
         location.reload();
       }
-    beepboop(input);
+    makeArray(input);
     $("form").hide();
     $("h1").hide();
     $("#output").show();
+
     $("#result").text(finalOutput);
   });
 });
@@ -18,8 +19,7 @@ $(document).ready(function() {
 
 //business logic
 var finalOutput = [];
-
-function beepboop(num) {
+function makeArray (num) {
   for (i=0; i<=num; i++) {
     finalOutput.push(" " + i);
   }
