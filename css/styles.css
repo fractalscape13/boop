@@ -1,7 +1,7 @@
 body, html {
   height: 100%;
   text-align: center;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: monospace;
 }
 
 .bg {
@@ -19,6 +19,21 @@ body, html {
 }
 
 h1 {
-  padding: 150px;
-  color: rgb(37, 2, 59);
+  padding: 100px;
+  color: rgb(37, 7, 56);
+  font-weight: bolder;
+}
+
+input {
+  width: 10%;
+  background-color: black;
+  color: silver;
+}
+
+button {
+  margin: 20px;
+  background-image: radial-gradient(rgb(159, 159, 236), cyan, yellow, red);
+  border: 3px solid black;
+  border-radius: 10%;
+  width: 20%;
 }
