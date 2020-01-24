@@ -1,0 +1,24 @@
+body, html {
+  height: 100%;
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.bg {
+  background-image: url("../img/hex.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+}
+
+.container {
+  background-color: rgb(224, 204, 178, .5);
+  height: 100vh;
+}
+
+h1 {
+  padding: 150px;
+  color: rgb(37, 2, 59);
+}
