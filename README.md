@@ -22,20 +22,20 @@ _Simple, doesn't require anything additional_
 
 * _Takes user input (numerical only)_
 * _Returns a list of numbers from 0 to the user inputted number_
-    * _Example: input: 5_
-                _output: 0, 1, 2, 3, 4, 5_
+    * _Example: input: 6_
+    * _output: 0, 1, 2, 3, 4, 5, 6_
 * _Returns 'beep' for any number containing the digit '1'_
     * _Example: input: 3_
-        * _output: 0, beep, 2, 3_
+    * _output: 0, beep, 2, 3_
 * _Returns 'boop' for any number containing the digit '2'_
     * _Example: input: 3_
-        * _output: 0, beep, boop, 3_
+    * _output: 0, beep, boop, 3_
 * _Returns 'I'm sorry Dave. I'm afraid I can't do that' for any number containing the digit '3'_
     * _Example: input: 4_
-        * _output: 0, beep, boop, I'm sorry Dave. I'm afraid I can't do that, 4_
+    * _output: 0, beep, boop, I'm sorry Dave. I'm afraid I can't do that, 4_
 * _Priority is given for numbers containing '3', then '2', then '1'_
     * _Example: input: 13_
-        * _output: 0, beep, boop, I'm sorry..., 4, 5, 6, 7, 8, 9, beep, beep, boop, I'm sorry..._
+    * _output: 0, beep, boop, I'm sorry..., 4, 5, 6, 7, 8, 9, beep, beep, boop, I'm sorry..._
 * _After output, user can reset the page_
 
 ## Known Bugs
