@@ -14,8 +14,17 @@ $(document).ready(function() {
 
 
 //business logic
-var finalOutput = [0,1,2,3];
+var finalOutput = [];
 
 function beepboop(num) {
+  for (i=0; i<num; i++) {
+    finalOutput.push(i);
+  }
 
+
+  // var nums = num.toString.split("");
+  // if ("1".includes(nums)) {
+
+  // }
+ // finalOutput.push(nums);
 }
