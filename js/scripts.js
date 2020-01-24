@@ -41,12 +41,12 @@ function beepboop (numArray) {
     } else if (numArray[i] > 9) {
       var bigNum = numArray[i].toString();
       var bigArray = bigNum.split("");
-          if (bigArray.includes("1")) {
-            finalOutput.push(" beep");
+          if (bigArray.includes("3")) {
+            finalOutput.push(" I'm sorry Dave, I'm afraid I can't do that")
           } else if (bigArray.includes("2")) {
             finalOutput.push(" boop");
-          } else if (bigArray.includes("3")) {
-            finalOutput.push(" I'm sorry Dave, I'm afraid I can't do that")
+          } else if (bigArray.includes("1")) {
+            finalOutput.push(" beep");
           } else {
             finalOutput.push(" " + bigArray.toString());
           }
