@@ -41,17 +41,15 @@ function beepboop (numArray) {
     } else if (numArray[i] > 9) {
       var bigNum = numArray[i].toString();
       var bigArray = bigNum.split("");
-        for (j=0; j<bigArray.length; j++) {
-          if (bigArray[i] == 1) {
+          if (bigArray.includes("1")) {
             finalOutput.push(" beep");
-          } else if (numArray[i] == 2) {
+          } else if (bigArray.includes("2")) {
             finalOutput.push(" boop");
-          } else if (numArray[i] == 3) {
+          } else if (bigArray.includes("3")) {
             finalOutput.push(" I'm sorry Dave, I'm afraid I can't do that")
           } else {
-            finalOutput.push(" " + i);
+            finalOutput.push(" " + bigArray.toString());
           }
-        }
       // console.log(bigArray);
     } else {
       finalOutput.push(" " + i);
