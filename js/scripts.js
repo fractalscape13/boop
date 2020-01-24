@@ -33,13 +33,28 @@ function beepboop (numArray) {
     if (numArray[i] == 0) {
       finalOutput.push(i);
     } else if (numArray[i] == 1) {
-      finalOutput.push("beep");
+      finalOutput.push(" beep");
     } else if (numArray[i] == 2) {
-      finalOutput.push("boop");
+      finalOutput.push(" boop");
     } else if (numArray[i] == 3) {
-      finalOutput.push("I'm sorry Dave, I'm afraid I can't do that.")
+      finalOutput.push(" I'm sorry Dave, I'm afraid I can't do that")
+    } else if (numArray[i] > 9) {
+      var bigNum = numArray[i].toString();
+      var bigArray = bigNum.split("");
+        for (j=0; j<bigArray.length; j++) {
+          if (bigArray[i] == 1) {
+            finalOutput.push(" beep");
+          } else if (numArray[i] == 2) {
+            finalOutput.push(" boop");
+          } else if (numArray[i] == 3) {
+            finalOutput.push(" I'm sorry Dave, I'm afraid I can't do that")
+          } else {
+            finalOutput.push(" " + i);
+          }
+        }
+      // console.log(bigArray);
     } else {
-      finalOutput.push(i);
+      finalOutput.push(" " + i);
     }
   }
 }
