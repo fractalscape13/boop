@@ -1,11 +1,15 @@
-//user interface
+//user interface logic
 $(document).ready(function() {
   $("form").submit(function(){
     event.preventDefault();
     var input = parseInt($("input").val());
+    var nums = "/^[0-9]+$/"
       if (!input) {
         location.reload();
-      }
+      } else if (!input.match(nums)) {
+        alert("Please only enter numbers. No letters or special characters!");
+        location.reload();
+      } 
     makeArray(input);
     $("form").hide();
     $("h1").hide();
