@@ -15,13 +15,13 @@ body, html {
 }
 
 .container {
-  background-color: rgb(224, 204, 178, .5);
+  background-color: rgb(224, 204, 178, .4);
   height: 100vh;
 }
 
 h1 {
   padding: 100px;
-  color: rgb(37, 7, 56);
+  color: rgb(16, 2, 26);
   font-weight: bolder;
 }
 
@@ -30,13 +30,14 @@ input {
   background-color: black;
   color: silver;
   text-align: center;
+  border: 1px solid black;
 }
 
 button {
   margin: 20px;
   background-image: radial-gradient(rgb(159, 159, 236), cyan, yellow, red);
-  border: 3px solid black;
-  border-radius: 10%;
+  border: 4px solid black;
+  border-radius: 15%;
   width: 30%;
 }
 
@@ -46,6 +47,7 @@ button:hover {
 
 #output {
   display: none;
+  padding-top: 250px;
 }
 
 #output a {
