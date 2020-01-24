@@ -24,7 +24,6 @@ function makeArray (num) {
   for (i=0; i<=num; i++) {
     numOutput.push(" " + i);
   }
-  console.log(numOutput);
   beepboop(numOutput);
 }
 
@@ -48,9 +47,10 @@ function beepboop (numArray) {
           } else if (bigArray.includes("1")) {
             finalOutput.push(" beep");
           } else {
-            finalOutput.push(" " + bigArray.toString());
+            var bigStr = bigArray.join("");
+            finalOutput.push(" " + bigStr);
           }
-      // console.log(bigArray);
+      console.log(bigArray);
     } else {
       finalOutput.push(" " + i);
     }
