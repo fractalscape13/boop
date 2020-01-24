@@ -5,14 +5,15 @@ $(document).ready(function() {
     var initialInput = $("input").val();
       if (!initialInput) {
         location.reload();
-      } else if (/[a-zA-Z]+$/.test(initialInput)) {
+      } else if (/[a-zA-Z]/.test(initialInput)) {
         alert("Please only enter numbers. No letters!");
         location.reload();
       } else if (/[~`!#$%\^&*+=\-\[\]\\';,/{}|\\":<>\?]/.test(initialInput)) {
         alert("Please only enter numbers. No special characters!");
         location.reload();
+      } else {
+        var input = parseInt($("input").val());
       }
-    var input = parseInt($("input").val());
     makeArray(input);
     $("form").hide();
     $("h1").hide();
