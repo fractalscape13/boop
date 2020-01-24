@@ -6,7 +6,7 @@ $(document).ready(function() {
       if (!initialInput) {
         location.reload();
       }  else if (/[a-zA-Z~`!#$%\^&*+=\-\[\]\\';,/{}|\\":<>\?]/.test(initialInput)) {
-        alert("Please only enter numbers. No letters or special characters!");
+        alert("NUMBERS ONLY, please. No letters or special characters!");
         location.reload();
       } else {
         var input = parseInt($("input").val());
@@ -23,8 +23,6 @@ $(document).ready(function() {
     $("#result").text(reverseOutput);
   });
 });
-
-
 
 
 //business logic
