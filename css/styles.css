@@ -21,9 +21,9 @@ body, html {
   margin-bottom: 20px;
 }
 
-h1 {
+h2 {
   padding-top: 100px;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
   color: rgb(16, 2, 26);
   font-weight: bolder;
 }

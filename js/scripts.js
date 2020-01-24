@@ -2,8 +2,9 @@
 $(document).ready(function() {
   $("form").submit(function(){
     event.preventDefault();
-    var initialInput = $("input").val();
-      if (!initialInput) {
+    name = $("input#username").val();
+    var initialInput = $("input#userinput").val();
+      if (!initialInput || !name) {
         location.reload();
       }  else if (/[a-zA-Z~`!#$%\^&*+=\-\[\]\\';,/{}|\\":<>\?]/.test(initialInput)) {
         alert("NUMBERS ONLY, please. No letters or special characters!");
@@ -13,7 +14,7 @@ $(document).ready(function() {
       }
     makeArray(input);
     $("form").hide();
-    $("h1").hide();
+    $("h2").hide();
     $("#output").show();
     $("#result").text(finalOutput);
   });
@@ -29,6 +30,7 @@ $(document).ready(function() {
 var numOutput = [];
 var finalOutput = [];
 var reverseOutput = [];
+var name = "";
 
 function makeArray (num) {
   for (i=0; i<=num; i++) {
