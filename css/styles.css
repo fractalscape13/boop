@@ -2,6 +2,7 @@ body, html {
   height: 100%;
   text-align: center;
   font-family: monospace;
+  font-size: larger;
 }
 
 .bg {
@@ -25,7 +26,7 @@ h1 {
 }
 
 input {
-  width: 10%;
+  width: 15%;
   background-color: black;
   color: silver;
 }
@@ -35,5 +36,9 @@ button {
   background-image: radial-gradient(rgb(159, 159, 236), cyan, yellow, red);
   border: 3px solid black;
   border-radius: 10%;
-  width: 20%;
+  width: 30%;
+}
+
+button:hover {
+  cursor: pointer;
 }
