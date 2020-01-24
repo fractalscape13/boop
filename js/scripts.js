@@ -5,11 +5,8 @@ $(document).ready(function() {
     var initialInput = $("input").val();
       if (!initialInput) {
         location.reload();
-      } else if (/[a-zA-Z]/.test(initialInput)) {
-        alert("Please only enter numbers. No letters!");
-        location.reload();
-      } else if (/[~`!#$%\^&*+=\-\[\]\\';,/{}|\\":<>\?]/.test(initialInput)) {
-        alert("Please only enter numbers. No special characters!");
+      }  else if (/[a-zA-Z~`!#$%\^&*+=\-\[\]\\';,/{}|\\":<>\?]/.test(initialInput)) {
+        alert("Please only enter numbers. No letters or special characters!");
         location.reload();
       } else {
         var input = parseInt($("input").val());
@@ -20,13 +17,20 @@ $(document).ready(function() {
     $("#output").show();
     $("#result").text(finalOutput);
   });
+  $("#reversebtn").click(function() {
+    event.preventDefault();
+    reverse(finalOutput);
+    $("#result").text(reverseOutput);
+  });
 });
+
 
 
 
 //business logic
 var numOutput = [];
 var finalOutput = [];
+var reverseOutput = [];
 
 function makeArray (num) {
   for (i=0; i<=num; i++) {
@@ -38,7 +42,7 @@ function makeArray (num) {
 function beepboop (numArray) {
   for (i=0; i<numArray.length; i++) {
     if (numArray[i] == 0) {
-      finalOutput.push(i);
+      finalOutput.push(" " + i);
     } else if (numArray[i] == 1) {
       finalOutput.push(" beep");
     } else if (numArray[i] == 2) {
@@ -58,14 +62,12 @@ function beepboop (numArray) {
             var bigStr = bigArray.join("");
             finalOutput.push(" " + bigStr);
           }
-      console.log(bigArray);
     } else {
       finalOutput.push(" " + i);
     }
   }
 }
-  // var nums = num.toString.split("");
-  // if ("1".includes(nums)) {
 
-  // }
- // finalOutput.push(nums);
+function reverse(array) {
+  reverseOutput = array.reverse();
+}

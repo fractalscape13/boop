@@ -49,6 +49,10 @@ button:hover {
   cursor: pointer;
 }
 
+#reversebtn {
+  margin-bottom: 30px;
+}
+
 #output {
   display: none;
   padding-top: 250px;
