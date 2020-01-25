@@ -11,7 +11,7 @@ _This site has two input forms, asks the user for a number and name, and returns
 ## Setup/Installation Requirements
 
 * _Copy link for github repository https://github.com/fractalscape13/boop_
-* _Open terminal, navigate to a directory that you want to clone the project into.  Type 'git clone https://github.com/fractalscape13/boop"_
+* _Open terminal, navigate to a directory that you want to clone the project into.  Type 'git clone https://github.com/fractalscape13/boop'_
 * _Open index.html in browser to view page_
 * _Open in text editor to view code_
 * _View working page at https://fractalscape13.github.io/boop/_
