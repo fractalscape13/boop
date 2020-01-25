@@ -40,7 +40,7 @@ input {
   background-color: black;
   color: silver;
   text-align: center;
-  border: 1px solid black;
+  border: 3px solid black;
   margin-bottom: 20px;
 }
 
@@ -48,7 +48,7 @@ button {
   margin: 20px;
   background-image: radial-gradient(rgb(159, 159, 236), cyan, yellow, red);
   border: 4px solid black;
-  border-radius: 15%;
+  border-radius: 10%;
   width: 30%;
   margin-bottom: 300px;
 }

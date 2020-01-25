@@ -15,7 +15,7 @@ $(document).ready(function() {
     makeArray(input);
     $("form").hide();
     $("h2").hide();
-    $("#output").show();
+    $("#output").fadeIn();
     $("#result").text(finalOutput);
   });
   $("#reversebtn").click(function() {
@@ -24,8 +24,6 @@ $(document).ready(function() {
     $("#result").text(reverseOutput);
   });
 });
-
-
 
 //business logic
 var numOutput = [];
@@ -49,11 +47,20 @@ function beepboop (numArray) {
     } else if (numArray[i] == 2) {
       finalOutput.push(" boop");
     } else if (numArray[i] == 3) {
-      finalOutput.push(" I'm sorry " + name + ", I'm afraid I can't do that")
+      if (numArray[i] % 3 === 0) {
+        finalOutput.push(" I'm sorry " + name + ", I'm afraid I can't do that")
+      } else {
+        finalOutput.push(" I'm sorry Dave, I'm afraid I can't do that")
+      }
     } else if (numArray[i] > 9) {
       var bigNum = numArray[i].toString();
       var bigArray = bigNum.split("");
           if (bigArray.includes("3")) {
+            if (numArray[i] % 3 === 0) {
+              finalOutput.push(" I'm sorry " + name + ", I'm afraid I can't do that")
+            } else {
+              finalOutput.push(" I'm sorry Dave, I'm afraid I can't do that")
+            }
             finalOutput.push(" I'm sorry " + name + ", I'm afraid I can't do that")
           } else if (bigArray.includes("2")) {
             finalOutput.push(" boop");
