@@ -6,7 +6,7 @@
 
 ## Description
 
-_This site has one input form, asks the user for a number, and returns different text outcomes based on which number the user has inputted_
+_This site has two input forms, asks the user for a number and name, and returns different text outcomes based on which number the user has inputted_
 
 ## Setup/Installation Requirements
 
@@ -41,6 +41,7 @@ _Simple, doesn't require anything additional_
     * _output: 0, beep, boop, I'm sorry Joe, I'm afraid I can't do that, 4, 5, 6, 7, 8, 9, beep, beep, boop, I'm sorry Dave, I'm afraid I can't do that, I'm sorry Joe, I'm afraid I can't do that_
 * _If either number or name inputs are left blank, page will refresh_
 * _If letters or special characters are inputted in number input, page will refresh.  Name input will accept all letters, numbers and special characters_
+* _After output, user can click to reverse the array_
 * _After output, user can reset the page_
 
 ## Known Bugs
