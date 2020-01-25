@@ -26,6 +26,7 @@ $(document).ready(function() {
 });
 
 
+
 //business logic
 var numOutput = [];
 var finalOutput = [];
@@ -48,12 +49,12 @@ function beepboop (numArray) {
     } else if (numArray[i] == 2) {
       finalOutput.push(" boop");
     } else if (numArray[i] == 3) {
-      finalOutput.push(" I'm sorry Dave, I'm afraid I can't do that")
+      finalOutput.push(" I'm sorry " + name + ", I'm afraid I can't do that")
     } else if (numArray[i] > 9) {
       var bigNum = numArray[i].toString();
       var bigArray = bigNum.split("");
           if (bigArray.includes("3")) {
-            finalOutput.push(" I'm sorry Dave, I'm afraid I can't do that")
+            finalOutput.push(" I'm sorry " + name + ", I'm afraid I can't do that")
           } else if (bigArray.includes("2")) {
             finalOutput.push(" boop");
           } else if (bigArray.includes("1")) {
